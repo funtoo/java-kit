@@ -7,10 +7,10 @@ inherit java-vm-2
 DESCRIPTION="Prebuilt Java JRE binaries provided by Eclipse Temurin"
 HOMEPAGE="https://adoptium.net"
 SRC_URI="
-	amd64? ( https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz -> OpenJDK8U-jre_x64_linux_hotspot_8u412b08.tar.gz )
-	arm64? ( https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz -> OpenJDK8U-jre_aarch64_linux_hotspot_8u412b08.tar.gz )
-	ppc64? ( https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz -> OpenJDK8U-jre_ppc64le_linux_hotspot_8u412b08.tar.gz )
-	arm? ( https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz -> OpenJDK8U-jre_arm_linux_hotspot_8u412b08.tar.gz )"
+	amd64? ( https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz -> OpenJDK8U-jre_x64_linux_hotspot_8u422b05.tar.gz )
+	arm64? ( https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz -> OpenJDK8U-jre_aarch64_linux_hotspot_8u422b05.tar.gz )
+	ppc64? ( https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz -> OpenJDK8U-jre_ppc64le_linux_hotspot_8u422b05.tar.gz )
+	arm? ( https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u422-b05/OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz -> OpenJDK8U-jre_arm_linux_hotspot_8u422b05.tar.gz )"
 
 LICENSE="GPL-2-with-classpath-exception"
 KEYWORDS="-* amd64 arm arm64 ppc64"
@@ -38,7 +38,7 @@ RDEPEND="
 RESTRICT="preserve-libs splitdebug"
 QA_PREBUILT="*"
 
-S="${WORKDIR}/jdk8u412-b08-jre"
+S="${WORKDIR}/jdk8u422-b05-jre"
 
 src_install() {
 	local dest="/opt/${P}"
