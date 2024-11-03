@@ -7,13 +7,14 @@ inherit java-vm-2
 DESCRIPTION="Prebuilt Java JDK binaries provided by Eclipse Temurin"
 HOMEPAGE="https://adoptium.net"
 SRC_URI="
-	amd64? ( https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz -> OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz )
-	arm64? ( https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz -> OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.3_9.tar.gz )
-	ppc64? ( https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz -> OpenJDK21U-jdk_ppc64le_linux_hotspot_21.0.3_9.tar.gz )
-	riscv64? ( https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_riscv64_linux_hotspot_21.0.3_9.tar.gz -> OpenJDK21U-jdk_riscv64_linux_hotspot_21.0.3_9.tar.gz )"
+	amd64? ( https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz -> OpenJDK17U-jdk_x64_linux_hotspot_17.0.12_7.tar.gz )
+	arm64? ( https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz -> OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.12_7.tar.gz )
+	ppc64? ( https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz -> OpenJDK17U-jdk_ppc64le_linux_hotspot_17.0.12_7.tar.gz )
+	riscv64? ( https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_riscv64_linux_hotspot_17.0.12_7.tar.gz -> OpenJDK17U-jdk_riscv64_linux_hotspot_17.0.12_7.tar.gz )
+	arm? ( https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz -> OpenJDK17U-jdk_arm_linux_hotspot_17.0.12_7.tar.gz )"
 
 LICENSE="GPL-2-with-classpath-exception"
-KEYWORDS="-* amd64 arm64 ppc64 riscv64"
+KEYWORDS="-* amd64 arm arm64 ppc64 riscv64"
 SLOT=$(ver_cut 1)
 IUSE="alsa cups headless-awt selinux source"
 
@@ -39,7 +40,7 @@ RDEPEND="
 RESTRICT="preserve-libs splitdebug"
 QA_PREBUILT="*"
 
-S="${WORKDIR}/jdk-21.0.3+9"
+S="${WORKDIR}/jdk-17.0.12+7"
 
 src_unpack() {
 	default
