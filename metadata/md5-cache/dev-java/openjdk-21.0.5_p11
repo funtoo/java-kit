@@ -10,6 +10,6 @@ LICENSE=GPL-2
 RDEPEND=media-libs/freetype:2= media-libs/giflib:0/7 media-libs/harfbuzz:= media-libs/libpng:0= media-libs/lcms:2= sys-libs/zlib media-libs/libjpeg-turbo:0= systemtap? ( dev-util/systemtap ) >=sys-apps/baselayout-java-0.1.0-r1 !headless-awt? ( x11-libs/libX11 x11-libs/libXext x11-libs/libXi x11-libs/libXrandr x11-libs/libXrender x11-libs/libXt x11-libs/libXtst ) alsa? ( media-libs/alsa-lib ) cups? ( net-print/cups ) selinux? ( sec-policy/selinux-java ) >=dev-java/java-config-2.2.0-r3 dev-java/java-config app-eselect/eselect-java
 REQUIRED_USE=javafx? ( alsa !headless-awt )
 SLOT=21
-SRC_URI=https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk-sources_21.0.4_7.tar.gz -> OpenJDK21U-jdk-sources_21.0.4_7.tar.gz
+SRC_URI=https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jdk-sources_21.0.5_11.tar.gz -> OpenJDK21U-jdk-sources_21.0.5_11.tar.gz
 _eclasses_=check-reqs	2c6f909675083dce8430b648bf737cb0	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	d0939f99dd528dd0c5ec25284877bf5c	java-pkg-2	c4e6af2574fd1dc79b43a6e27af4b5fb	java-utils-2	dd352559d0e143500ec878acc74da909	java-vm-2	fe7887973e07a504c9f011de30bc9c48	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	pax-utils	db85a3c508cf82c45f24b2723791cc93	prefix	e51c7882b7b721e54e684f7eb143cbfe	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	xdg-utils	14d00d009167652b1fa363e55effe213
-_md5_=c0e6a4ea4e5c8932a5cfc16afb665857
+_md5_=48d25e0f532eeb4d0a8d4f5a22399b87
